@@ -190,7 +190,7 @@ const ChatComponent = () => {
           <SendIcon onClick={handleSendMsg} />
         </div>
       </div>
-      <button onClick={toggleChat} className="chatButton">
+      <button onClick={toggleChat}  className={` ${!isChatOpen ? "chatButton" : "invisible"}`}>
         {isChatOpen ? <CloseIcon /> : <ChatBubbleIcon />}
         {!isChatOpen && newMessagesCount > 0 && (
           <span className="notification-badge">{newMessagesCount}</span>
