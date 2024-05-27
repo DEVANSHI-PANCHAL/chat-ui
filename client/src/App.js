@@ -1,13 +1,12 @@
 import logo from './logo.svg';
 import './App.css';
-import ChatComponent from './Chat';
-import React from 'react'
+import ChatComponent from './chat/Chat';
 
 function App() {
   return (
-   <>
-   <ChatComponent/>
-   </>
+    <>
+    <ChatComponent/>
+    </>
   );
 }
 
